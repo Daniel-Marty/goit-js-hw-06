@@ -13,12 +13,23 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-for (let name of ingredients) {
+const oneMoreUl = document.createElement('ul');
+
+ingredients.map(name => {
   const productEl = document.createElement('li');
   productEl.classList.add('item');
   productEl.textContent = name; 
-  ingredientsList.append(productEl);
-  console.log(productEl);
-}
-
+  oneMoreUl.append(productEl);
+});
+ingredientsList.append(oneMoreUl);
+// for (let name of ingredients) {
+//   const productEl = document.createElement('li');
+//   productEl.classList.add('item');
+//   productEl.textContent = name; 
+//   ingredientsList.append(productEl);
+//   console.log(productEl);
+// }
+// На видео было показано как создавался виртуальный "ul"
+//  и потом это виртуальный 'ul' вешался целиком.В нашем случае
+//  ul уже создан. Я не знаю как по-другому сделать это задание.
 

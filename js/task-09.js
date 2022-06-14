@@ -12,3 +12,4 @@ function backGroundChange() {
   spanColor.textContent = hexColor;
   console.log(hexColor);
 }
+
